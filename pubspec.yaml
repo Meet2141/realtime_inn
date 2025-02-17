@@ -1,0 +1,75 @@
+name: clean_architecture_seed
+description: "A new Flutter project with clean architecture seed."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Url Launcher
+  url_launcher: ^6.3.1
+  mailto: ^2.0.0
+
+  # Network Images
+  cached_network_image: ^3.4.1
+
+  # Assets
+  lottie: ^3.3.1
+  flutter_svg: ^2.0.17
+
+  # Environment
+  flutter_dotenv: ^5.2.1
+
+  # Toast
+  bot_toast: ^4.1.3
+
+  # Intl
+  intl: ^0.20.2
+
+  # Routing
+  go_router: ^14.7.2
+
+  # Shimmer
+  shimmer: ^3.0.0
+
+  # Local Storage
+  encrypt: ^5.0.3
+  shared_preferences: ^2.5.1
+
+  #Device Info
+  connectivity_plus: ^6.1.2
+  share_plus: ^10.1.4
+  safe_device: ^1.2.0
+  device_info_plus: ^11.2.2
+  package_info_plus: ^8.2.0
+  flutter_slidable: ^4.0.0
+
+  # State Management
+  flutter_bloc: ^9.0.0
+
+  # Service
+  dio: ^5.8.0+1
+  jwt_decoder: ^2.0.1
+  stack_trace: ^1.12.0
+  equatable: ^2.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.14
+  json_serializable: ^6.9.3
+  copy_with_extension_gen: ^6.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/pngs/
+    - assets/svgs/
+    - assets/animation/
+    - .env.dev
+    - .env.prod
