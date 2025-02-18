@@ -228,6 +228,7 @@ class _AddEmployeeFormState extends State<AddEmployeeForm> {
                 ),
               ),
               AddEmployeeActions(
+                id: widget.employee.id,
                 onTap: _saveEmployee,
               ),
             ],

@@ -17,6 +17,7 @@ class StringConstants {
   static const no = 'No';
   static const ok = 'Ok';
   static const save = 'Save';
+  static const update = 'Update';
   static const selectRole = 'Select Role';
   static const startDate = 'Start Date';
   static const endDate = 'End Date';
@@ -28,6 +29,7 @@ class StringConstants {
   static const editEmployeeDetails = 'Edit Employee Details';
   static const copiedToClipBoard = 'Copied to Clipboard!';
   static const employeeAddedSuccess = 'Employee added successfully!';
+  static const employeeDeletedSuccess = 'Employee deleted successfully!';
   static const employeeUpdatedSuccess = 'Employee updated successfully!';
   static const defaultDate = 'dd/MM/yyyy';
   static const newDate = 'd MMM, yyyy';
@@ -43,6 +45,7 @@ class StringConstants {
   static const connectTimedOut = 'Connect timed out';
   static const pleaseTryAgain = 'Please try again.';
   static const employeeAddError = 'Employee adding error!';
+  static const employeeDeleteError = 'Employee delete error!';
   static const nameIsRequired = 'Employee name is required!!';
   static const roleIsRequired = 'Employee role is required!!';
   static const pleaseCheckInternet = 'Please Check Internet';

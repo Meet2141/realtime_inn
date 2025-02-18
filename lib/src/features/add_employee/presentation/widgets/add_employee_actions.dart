@@ -10,9 +10,14 @@ import '../../../../core/widgets/divider/horizontal_divider.dart';
 
 /// AddEmployeeActions - Display Actions like cancel and save
 class AddEmployeeActions extends StatelessWidget {
-  const AddEmployeeActions({super.key, required this.onTap});
+  const AddEmployeeActions({
+    super.key,
+    required this.onTap,
+    required this.id,
+  });
 
   final VoidCallback onTap;
+  final String id;
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +41,7 @@ class AddEmployeeActions extends StatelessWidget {
             hSpace(),
             _actionButton(
               context,
-              text: StringConstants.save,
+              text: id.isEmpty ? StringConstants.save : StringConstants.update,
               backgroundColor: ColorConstants.primary,
               textColor: ColorConstants.white,
               onTap: () {

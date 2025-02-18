@@ -8,7 +8,7 @@ import 'src/core/constants/string_constants.dart';
 import 'src/core/routing/routing_config.dart';
 import 'src/features/employee/presentation/bloc/employee_bloc.dart';
 
-void mainDelegate() {
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }

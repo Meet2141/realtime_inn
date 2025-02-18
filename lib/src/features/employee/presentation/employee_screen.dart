@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../core/constants/color_constants.dart';
 import '../../../core/constants/string_constants.dart';
 import '../../../core/shared/text_widgets.dart';
+import '../../../core/utils/toast_utils.dart';
 import 'bloc/employee_bloc.dart';
 import 'bloc/employee_event.dart';
 import 'bloc/employee_state.dart';
@@ -41,7 +42,14 @@ class _EmployeeScreenState extends State<EmployeeScreen> {
         ),
         backgroundColor: ColorConstants.primary,
       ),
-      body: BlocBuilder<EmployeeBloc, EmployeeState>(
+      body: BlocConsumer<EmployeeBloc, EmployeeState>(
+        listener: (context, state) {
+          if (state is EmployeeDeletedState) {
+            ToastUtils.showSuccess(message: StringConstants.employeeDeletedSuccess);
+          } else if (state is EmployeeErrorState) {
+            ToastUtils.showFailed(message: StringConstants.employeeDeleteError);
+          }
+        },
         builder: (context, state) {
           if (state is EmployeeLoadingState) {
             return const Center(

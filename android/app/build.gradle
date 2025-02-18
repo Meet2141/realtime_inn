@@ -31,19 +31,6 @@ android {
             signingConfig = signingConfigs.debug
         }
     }
-    flavorDimensions "flavor-type"
-
-    productFlavors {
-        development {
-            dimension "flavor-type"
-            resValue "string", "app_name", "Seed Dev"
-            applicationIdSuffix ".dev"
-        }
-        production {
-            dimension "flavor-type"
-            resValue "string", "app_name", "Seed"
-        }
-    }
 
     lint {
         checkReleaseBuilds false
@@ -52,5 +39,4 @@ android {
 
 flutter {
     source = "../.."
-    target 'lib/dev/dev_main.dart'
 }
